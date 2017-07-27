@@ -20,13 +20,11 @@ export const ADD_COMMENT = 'ADD_COMMENT';
 // {
 // 	type: THUMB_UP_COMMENT,
 // 	id: 30, 
-//  //   votes: votes++ // zwieksza ilosc polubien
 // }
 
 // {
 // 	type: THUMB_DOWN_COMMENT,
 // 	id: 40,
-// //    votes: votes-- // zmniejsza ilosc polubien
 // }
 
 function addComment(text) {
@@ -57,7 +55,6 @@ function thumbUpComment(id) {
 	return {
 		type: THUMB_UP_COMMENT,
 		id: id,
-//        votes: votes++
 	}
 }
 
@@ -65,11 +62,7 @@ function thumbDownComment(id) {
 	return {
 		type: THUMB_DOWN_COMMENT,
 		id: id,
-//        votes: votes--
 	}
 }
+
 export {addComment, removeComment, thumbDownComment, thumbUpComment, editComment};
-// export removeComment;
-// export thumbDownComment;
-// export thumbUpComment;
-// export editComment;
